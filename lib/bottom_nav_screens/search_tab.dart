@@ -64,7 +64,7 @@ class _SearchTabState extends State<SearchTab> {
                           ],
                         ),
                       ),
-                      SearchBar(focus: _focus,),
+                      Expanded(child: SearchBar(focus: _focus,)),
                     ],
                   ),
                 ),

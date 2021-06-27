@@ -47,10 +47,7 @@ class Settings extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.all(10.0),
-                  child: SizedBox(
-                    height: 40,
-                    child: SearchBar(),
-                  ),
+                  child: SearchBar(width: double.infinity,),
                 ),
                 ...List.generate(settingsModelList.length, (index) {
                   return InkWell(

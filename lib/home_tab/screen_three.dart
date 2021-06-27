@@ -92,7 +92,7 @@ class _ScreenThreeState extends State<ScreenThree> {
                     children: [
                       SizedBox(
                         height: 40,
-                        child: SearchBar(),
+                        child: SearchBar(width: double.infinity,),
                       ),
                       SizedBox(height: 15.0,),
                       Text(

@@ -3,12 +3,15 @@ import 'package:instagram_clone/app_colors.dart';
 
 
 class SearchBar extends StatelessWidget {
+  double width;
   final FocusNode focus;
-  const SearchBar({Key key, this.focus}) : super(key: key);
+  SearchBar({Key key, this.width, this.focus}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return SizedBox(
+      width: width,
+      height: 40,
       child: TextField(
           focusNode: focus,
           style: TextStyle(
