@@ -59,9 +59,9 @@ class Settings extends StatelessWidget {
                       }
 
                       if(settingsModelList[index].id == 8){
-                        await canLaunch('https://srinivasa.divcodes.in/')
-                            ? await launch('https://srinivasa.divcodes.in/')
-                          : throw 'Could not launch https://srinivasa.divcodes.in/';
+                        await canLaunch('https://srinivasa.dev/')
+                            ? await launch('https://srinivasa.dev/')
+                          : throw 'Could not launch https://srinivasa.dev/';
                       }
                     },
                     child: Padding(
@@ -103,7 +103,7 @@ class Settings extends StatelessWidget {
                         ),
                         children: [
                           TextSpan(
-                              text: 'Div_Codes.',
+                              text: 'Srinivasa.',
                               style: TextStyle(
                                   color: AppColor.textColor,
                                   fontWeight: FontWeight.w500,
@@ -112,7 +112,7 @@ class Settings extends StatelessWidget {
                                   letterSpacing: 2
                               ),
                               recognizer: TapGestureRecognizer()..onTap = () async {
-                                const url = 'https://divcodes.in';
+                                const url = 'https://srinivasa.dev';
                                 if (await canLaunch(url)) {
                                   await launch(url);
                                 } else {
